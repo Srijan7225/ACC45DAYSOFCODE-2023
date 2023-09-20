@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int X, Y;
+    printf("Enter the number of students (X): ");
+    scanf("%d", &X);
+    printf("Enter the number of chairs Chef already has (Y): ");
+    scanf("%d", &Y);
+
+    int chairs_needed = X - Y;
+    
+    if (chairs_needed <= 0) {
+        printf("Chef has enough chairs for all students.\n");
+    } else {
+        printf("Chef needs to buy at least %d new chairs.\n", chairs_needed);
+    }
+
+    return 0;
+}
