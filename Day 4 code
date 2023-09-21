@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double L, V1, V2;
+    printf("Enter the length of the racetrack (L): ");
+    scanf("%lf", &L);
+    printf("Enter the speed of the tortoise (V1): ");
+    scanf("%lf", &V1);
+    printf("Enter the speed of the hare (V2): ");
+    scanf("%lf", &V2);
+
+    // Calculate the head start time for the hare
+    int headStartSeconds = ceil((V2 / V1) - 1);
+
+    printf("The hare should wait for %d seconds to give the tortoise a head start.\n", headStartSeconds);
+
+    return 0;
+}
